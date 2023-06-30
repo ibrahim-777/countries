@@ -1,0 +1,24 @@
+1-let newRequest = new XMLHttpRequest();
+newRequest.addEventListener('load',()=>{
+console.log('it is work');
+const data*(variable to use) = json.parse(newRequest.responseText)
+console.log(data);
+})
+
+////old function
+let newRequest = new XMLHttpRequest();
+newRequest.addEventListener('load',function ()=>{
+console.log('it is work');
+const data*(variable to use) = json.parse(this.responseText)
+console.log(data);
+})
+
+2-newRequest.open('GET','www.link/api.com')
+3-newRequest.send()
+
+  let cancel = document.getElementsByClassName('cancel')
+            cancel.addEventListener('click',()=> {
+                if (div.style.display === "none") {div.style.display === "block"}
+                else {div.style.display = "none";}
+                })
+<button onClick={cancelDiv()}>Cancel</button>

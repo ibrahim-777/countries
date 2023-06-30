@@ -1,0 +1,118 @@
+
+.img{
+ width:22rem;
+ height: 21rem;
+ border-radius: 15px;  
+margin: 10px;
+ border: 0.3px solid black;
+}
+body{
+    background-color: rgb(203, 194, 230);
+}
+.border-primary{
+    color:dark;
+}
+.card-img-top{
+    width: 17rem;
+}
+#flags{
+    width:100%;
+    display: grid;
+    grid-template-columns:10vw 10vw 10vw 10vw;
+    row-gap: 2rem;
+    justify-items: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+    
+}
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+.cancel{
+    width:2rem;
+    height: auto;
+    float: right;
+  
+}
+.div22{
+border-radius: 1.5rem;
+width:25rem;
+height: 12rem;
+text-align: left;
+background-color: #fff;
+font-size: 1rem;
+position: fixed;
+padding:15px;
+z-index: 1;
+display:none;
+}
+.div22 h3{
+    font-size: 1.5rem;
+}
+.littleImg{
+    width:50px;
+    height:50px;
+    border:0.2px solid black;
+}
+.card{
+    width: 20rem;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 5px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.5);
+}
+.show{
+    display: block;
+}
+@media (max-width:400px){
+    .img{
+        width:15rem;
+        height: 15rem;
+        border-radius: 15px;  
+       margin: 10px;
+        border: 0.3px solid black;
+       }
+       .div22{
+        border-radius: 1.5rem;
+        width:18rem;
+        height: 8.5rem;
+        /* text-align: left;
+        background-color: #fff; */
+        /* position: fixed;
+        padding:15px;
+        z-index: 1;
+        display:none; */
+        }
+        .div22 h3{
+            font-size: 1rem;
+            margin: 0;
+        }
+        .div22 h5{
+            font-size: 1rem;
+            margin: 0;
+        }
+       #flags{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: space-between;
+        
+    }
+    .card{
+        width: 20rem;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        margin: 5px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.5);
+    }
+}
