@@ -71,7 +71,7 @@ display:none;
 .show{
     display: block;
 }
-@media (max-width:400px){
+@media (max-width:500px){
     .img{
         width:15rem;
         height: 15rem;
